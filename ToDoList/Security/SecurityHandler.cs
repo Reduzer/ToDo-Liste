@@ -5,7 +5,7 @@
 		public Hashing oHashing;
 		private static SecurityHandler instance;
 
-		public SecurityHandler()
+		private SecurityHandler()
 		{
 			oHashing = new Hashing();
 		}
