@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Frontend.Pages.LogIn"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <Grid
+        Padding="20"
+        RowSpacing="15"
+        VerticalOptions="Center">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Text="Willkommen!"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            SemanticProperties.HeadingLevel="Level1" />
+
+        <Entry
+            Grid.Row="1"
+            Placeholder="Benutzername"
+            Keyboard="Email"
+            x:Name="UsernameEntry"
+            SemanticProperties.Hint="Geben Sie Ihren Benutzernamen ein" />
+
+        <Entry
+            Grid.Row="2"
+            Placeholder="Passwort"
+            IsPassword="True"
+            x:Name="PasswordEntry"
+            SemanticProperties.Hint="Geben Sie Ihr Passwort ein" />
+
+        <Button
+            Grid.Row="3"
+            Text="Login"
+            FontAttributes="Bold"
+            SemanticProperties.Hint="Klicken Sie hier, um sich anzumelden"
+            Clicked="OnLoginButtonClicked"
+            HorizontalOptions="Fill" />
+
+    </Grid>
+
+</ContentPage>
