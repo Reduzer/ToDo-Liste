@@ -1,0 +1,12 @@
+{
+  "name": "tododesktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fyn Deubner",
+  "license": "GNU GPL 2.0",
+  "description": "This is a ToDo App that should be able to run on any platform while being hostet anywhere"
+}
