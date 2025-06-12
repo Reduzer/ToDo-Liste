@@ -2,6 +2,7 @@
 {
 	public class SecurityHandler
 	{
+		private string sPassword { get; set; }
 		public Hashing oHashing;
 		private static SecurityHandler instance;
 
@@ -9,7 +10,8 @@
 		{
 			oHashing = new Hashing();
 		}
-		private static SecurityHandler Instance{
+		private static SecurityHandler Instance
+		{
 			get{
 				if(instance == null){
 					instance = new SecurityHandler();
@@ -18,9 +20,9 @@
 			}
 		}
 
-		public Hashing hashing()
+		public string hashing()
 		{
-			return oHashing;
+			return oHashing.Hash(sPassword);
 		}
 	}
 }
