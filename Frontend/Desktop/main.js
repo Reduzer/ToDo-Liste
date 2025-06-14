@@ -10,7 +10,7 @@ const createWindow = () => {
     }
   })
 
-  win.loadFile('./Pages/login.html')
+  win.loadFile('./Pages/Login/login.html')
 }
 
 app.whenReady().then(() => {
@@ -30,15 +30,10 @@ app.on('window-all-closed', () => {
 })
 
 function LoadPage(sPageName){
-
-
   win.LoadPage(sPageName)
-
 }
 
 function CheckInput(sInput){
-  bFoundInvalidSequenz
-
   if(sInput.length >= 1000){
     return true
   }
