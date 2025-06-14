@@ -1,12 +1,16 @@
 const { app, BrowserWindow } = require('electron/main')
+const path = require('node:path')
 
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js')
+    }
   })
 
-  win.loadFile('index.html')
+  win.loadFile('./Pages/login.html')
 }
 
 app.whenReady().then(() => {
@@ -24,3 +28,23 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+
+function LoadPage(sPageName){
+
+
+  win.LoadPage(sPageName)
+
+}
+
+function CheckInput(sInput){
+  bFoundInvalidSequenz
+
+  if(sInput.length >= 1000){
+    return true
+  }
+
+  if(sInput.includes("'") || sInput.includes('"')){
+    return true
+  }
+}
+

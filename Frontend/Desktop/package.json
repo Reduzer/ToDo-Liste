@@ -8,5 +8,8 @@
   },
   "author": "Fyn Deubner",
   "license": "GNU GPL 2.0",
-  "description": "This is a ToDo App that should be able to run on any platform while being hostet anywhere"
+  "description": "This is a ToDo App that should be able to run on any platform while being hostet anywhere",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
 }
