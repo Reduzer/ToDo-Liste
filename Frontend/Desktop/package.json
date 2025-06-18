@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
+    "build": "tsc",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,8 @@
   "description": "This is a ToDo App that should be able to run on any platform while being hostet anywhere",
   "devDependencies": {
     "electron": "^36.4.0"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
   }
 }
