@@ -1,0 +1,30 @@
+﻿@page "/Register"
+<h3>Register</h3>
+
+<div>
+    <p>TEST</p>
+    
+    <h1>@sTestString</h1>
+    <p>
+        <button @onclick="UpdateHeading">Show Register Form? </button>
+    </p>
+    
+    <p>
+        <label>
+            <input type="checkbox" @onchange="CheckChanged" />
+            @checkedMessage
+        </label>
+    </p>
+
+
+</div>
+
+@code {
+    private string sTestString = "Penis";
+    private string checkedMessage = "Not Changed yet";
+    private bool bShowForm = false;
+
+    private void UpdateHeading() => sTestString = $"Kein Penis";
+    private void CheckChanged() => checkedMessage = $"Last change {DateTime.Now}";
+    
+}
