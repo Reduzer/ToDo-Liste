@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "DatabaseService";
+
+service UserService {
+  rpc User (UserRequest) returns (UserResponse);
+}
+
+message UserRequest {
+  string sUsername = 1;
+  string sPassword = 2;
+}
+
+message UserResponse {
+  string sJWTToken = 1;
+}
