@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "DatabaaseService";
+
+service TaskService{
+	rpc CheckPassword(PasswordRequest) returns (PasswordResponse);
+}
+
+message TaskRequest{
+	string message = 1;
+}
+
+message TaskResponse {
+	string message = 1;
+}

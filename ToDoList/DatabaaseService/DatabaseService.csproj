@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -10,6 +10,9 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+		<Protobuf Include="Protos\Password.proto" GrpcService="Server" />
+		<Protobuf Include="Protos\Project.proto" GrpcService="Server" />
+		<Protobuf Include="Protos\Task.proto" GrpcService="Server" />
     <Protobuf Include="Protos\UserService.proto" GrpcServices="Server" />
   </ItemGroup>
 
